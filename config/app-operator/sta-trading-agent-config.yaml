@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sta-spring-boot-trading-agent-zero-and-one-config
+type: Opaque
+stringData:
+  provider: sandbox
+  type: config
+  app.marketplace.url: https://sta.az.run.withtanzu.com
+  app.agent.strategy: buy-lower-stock
+  app.agent.user: one-and-zero
