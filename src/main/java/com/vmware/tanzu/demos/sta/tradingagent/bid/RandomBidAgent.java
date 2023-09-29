@@ -15,7 +15,7 @@ class RandomBidAgent implements BidAgent {
     public List<BidAgentRequest> execute(Context ctx) {
         final int i = random.nextInt(ctx.stocks().size());
         final boolean buy = random.nextBoolean();
-        return List.of(new BidAgentRequest(ctx.stocks().get(i).symbol(), buy ? 100 : -100));
+        return List.of(new BidAgentRequest(ctx.stocks().get(i).symbol(), buy ? 50 : -100));
     }
 
     @Override
